@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "adieu";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+src: url(../font/adieu.otf);
+}
+
+@font-face {
+    font-family: "swiss";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+src: url(../font/SuisseWorks-Medium.otf);
+}
+
+:root {
+--dark: #8C2D2F;
+--light: #F6EBDB;
+--mid: #D09D4D;
+--pure: white;
+
+}
+
+* {
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+}
+
+#app {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+#background {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#outsideBorder{
+    width: 93%;
+    height: 93%;
+    position: absolute;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#insideBorder{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+}
+
+
+.goldText {
+    font-family: 'swiss';
+    text-align: center;
+    color: var(--mid);
+    font-size: 20px;
+    width: 80%;
+}
+
+.fatWhite{
+    width: 100%;
+    font-family: 'adieu';
+    font-size: 22px;
+    color: var(--pure);
+    text-transform: uppercase;
+}
+
+/*  admin */
+
+#adminPanel {
+    position: absolute;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+}
